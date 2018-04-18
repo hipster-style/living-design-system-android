@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const createHTML = require('create-html');
+const sass = require('node-sass');
 
 var components = {}
 
@@ -64,14 +65,14 @@ htmlBody += "</div>"
 // End - columns section
 htmlBody += "</div>"
 
-// Build up a folder with the index.html, screenshots and the css in there
-// Copy the bulma css
-fs.createReadStream('./node_modules/bulma/css/bulma.min.css').pipe(fs.createWriteStream('site/bulma.min.css'))
-
 // Add index.html to the site folder
 fs.writeFileSync('site/index.html', createHTML({
   'title': "Design System",
   'body': htmlBody,
-  'css': 'bulma.min.css',
+  'css': 'style.css',
   'head': '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
 }));
+
+// Generate css from scss file and add to correct place
+const cssOutput = sass.renderSync({file: 'style.scss'}).css;
+fs.writeFileSync('site/style.css', cssOutput);
