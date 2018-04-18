@@ -17,7 +17,9 @@ class ButtonScreenshotTest {
         val view = inflater.inflate(R.layout.view_button, null, false) as Button
         view.render(true)
         ViewHelpers.setupView(view).setExactWidthDp(300).layout()
-        Screenshot.snap(view).record()
+        Screenshot.snap(view)
+                .setName("Button:Active")
+                .record()
     }
 
     @Test
@@ -27,6 +29,8 @@ class ButtonScreenshotTest {
         val view = inflater.inflate(R.layout.view_button, null, false) as Button
         view.render(false)
         ViewHelpers.setupView(view).setExactWidthDp(300).layout()
-        Screenshot.snap(view).record()
+        Screenshot.snap(view)
+                .setName("Button:Inactive")
+                .record()
     }
 }
