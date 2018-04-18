@@ -13,8 +13,11 @@ fs.readdirSync("../screenshots").forEach(file => {
     components[componentName] = []
   }
 
+  // Copy screenshots to screenshots folder
+  fs.createReadStream(absolutePathToFile).pipe(fs.createWriteStream('site/screenshots/' + file))
+
   components[componentName].push({
-    "image": absolutePathToFile,
+    "image": "screenshots/" + file,
     "state": state
   });
 });
@@ -61,10 +64,14 @@ htmlBody += "</div>"
 // End - columns section
 htmlBody += "</div>"
 
+// Build up a folder with the index.html, screenshots and the css in there
+// Copy the bulma css
+fs.createReadStream('./node_modules/bulma/css/bulma.min.css').pipe(fs.createWriteStream('site/bulma.min.css'))
 
-fs.writeFileSync('index.html', createHTML({
+// Add index.html to the site folder
+fs.writeFileSync('site/index.html', createHTML({
   'title': "Design System",
   'body': htmlBody,
-  'css': './node_modules/bulma/css/bulma.min.css',
+  'css': 'bulma.min.css',
   'head': '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
 }));
