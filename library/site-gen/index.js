@@ -31,6 +31,12 @@ htmlBody += '<div class="columns is-mobile">'
 htmlBody += '<div class="column">'
 
 htmlBody += '<aside class="menu">'
+
+htmlBody += `<p class="menu-label">General</p>`
+htmlBody += '<ul class="menu-list">'
+htmlBody += `<li><a href="../styleguide/app.html">Design Tokens</a></li>`
+htmlBody += '</ul>'
+
 htmlBody += '<p class="menu-label">Components</p>'
 htmlBody += '<ul class="menu-list">'
 
