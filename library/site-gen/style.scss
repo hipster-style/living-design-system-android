@@ -1,12 +1,12 @@
+@import "node_modules/bulma/bulma.sass";
+
 $textColor: #6a9a80;
-$backgroundColor: #f0eae4ff;
+$backgroundColor: #F0EAE5;
 
 h1, h2, h3, h4, h5, h6 {
   color: $textColor;
 }
 
-body {
+html {
   background-color: $backgroundColor;
 }
-
-@import "node_modules/bulma/bulma.sass"
