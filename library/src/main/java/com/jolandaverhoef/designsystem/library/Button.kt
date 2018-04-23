@@ -15,6 +15,7 @@ class Button @JvmOverloads constructor(
 
     init {
         View.inflate(context, R.layout.merge_button, this)
+        isClickable = true
     }
 
     fun render(active: Boolean) {
