@@ -18,6 +18,7 @@
     <color name="BLUE_GREY_600" category="background-color">#ff546e7a</color>
     <color name="BLUE_GREY_700" category="background-color">#ff455a64</color>
     <color name="BLUE_GREY_900" category="background-color">#ff263238</color>
+    <color name="RED" category="background-color">#ff0000</color>
     <dimen name="BORDER_RADIUS_SMALL" category="radius">3dp</dimen>
     <dimen name="BORDER_RADIUS_MEDIUM" category="radius">5dp</dimen>
     <dimen name="BORDER_RADIUS_LARGE" category="radius">8dp</dimen>
