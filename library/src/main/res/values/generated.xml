@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources>
-    <dimen name="BORDER_RADIUS_BUTTON" category="radius" value="8px"/>
-    <dimen name="SPACING_BUTTON_PADDING" category="spacing" value="8px"/>
-    <color name="COLOR_BACKGROUND_BUTTON" category="background-color">#619a82</color>
-    <color name="COLOR_BACKGROUND_BUTTON_SHADOW" category="background-color">#1a393f</color>
-    <color name="COLOR_TEXT_BUTTON" category="text-color">#efeae5</color>
-</resources>

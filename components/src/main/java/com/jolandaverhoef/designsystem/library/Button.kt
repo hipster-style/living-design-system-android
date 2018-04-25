@@ -19,10 +19,9 @@ class Button @JvmOverloads constructor(
     }
 
     fun render(active: Boolean) {
-        button_image.setImageResource(
-                if(active) android.R.drawable.ic_btn_speak_now
-                else android.R.drawable.ic_delete)
-        button_text.setTextColor(ContextCompat.getColor(context, R.color.COLOR_TEXT_BUTTON))
-        setBackgroundResource(R.drawable.bg_button)
+        button_text.setTextColor(ContextCompat.getColor(context, R.color.BLUE_GREY_200))
+        setBackgroundResource(
+                if(active) R.drawable.bg_button
+                else R.drawable.bg_button_inactive)
     }
 }

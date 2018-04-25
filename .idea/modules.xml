@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/components/components.iml" filepath="$PROJECT_DIR$/components/components.iml" />
+      <module fileurl="file://$PROJECT_DIR$/designtokens/designtokens.iml" filepath="$PROJECT_DIR$/designtokens/designtokens.iml" />
       <module fileurl="file://$PROJECT_DIR$/living-design-system-android.iml" filepath="$PROJECT_DIR$/living-design-system-android.iml" />
     </modules>
   </component>

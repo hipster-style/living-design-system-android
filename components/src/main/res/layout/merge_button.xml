@@ -6,20 +6,15 @@
     android:layout_height="wrap_content"
     tools:parentTag="android.support.constraint.ConstraintLayout">
 
-    <ImageView
-        android:id="@+id/button_image"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@android:drawable/ic_btn_speak_now"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/button_text"
         android:layout_width="0dp"
+        android:textSize="@dimen/FONT_SIZE_XX_LARGE"
+        android:padding="@dimen/SPACING_MEDIUM"
         android:layout_height="wrap_content"
-        android:text="Speak now"
+        android:text="Sample text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button_image"
         app:layout_constraintTop_toTopOf="parent" />
 </merge>
