@@ -90,7 +90,7 @@ for (var componentName in components) {
       .splice(2)
       .join('\n');
 
-    htmlBody += '<h3 class="title is-4">Behavior</h3>'
+    htmlBody += '<h3 class="title is-4 spacing">Behavior</h3>'
     htmlBody += '<div class="component-code">'
     htmlBody += '<pre>'
     htmlBody += '<code class="language-kotlin">'
